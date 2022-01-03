@@ -41,9 +41,9 @@ Remove-Item "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Desktop\Na
 Remove-Item "HKCU:\Software\SyncEngines\Providers\OneDrive\*" -Recurse -Force -Verbose -ErrorAction SilentlyContinue
 Remove-ItemProperty -Path "HKCU:\Environment" -Name "OneDrive" -Force -Verbose -ErrorAction SilentlyContinue
 Remove-ItemProperty -Path "HKCU:\Environment" -Name "OneDriveCommercial" -Force -Verbose -ErrorAction SilentlyContinue
-Remove-Item "HKCU:\Software\Classes\CLSID\{04271989*}\*" -Recurse -Force -Verbose -ErrorAction SilentlyContinue 
-Remove-Item "HKCU:\Software\Classes\WOW6432Node\CLSID\{04271989*}\*" -Recurse -Force -Verbose -ErrorAction SilentlyContinue
-Remove-Item "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{04271989*}\*" -Recurse -Force -Verbose -ErrorAction SilentlyContinue
+Remove-Item "HKCU:\Software\Classes\CLSID\{04271989*" -Recurse -Force -Verbose -ErrorAction SilentlyContinue 
+Remove-Item "HKCU:\Software\Classes\WOW6432Node\CLSID\{04271989*" -Recurse -Force -Verbose -ErrorAction SilentlyContinue
+Remove-Item "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{04271989*" -Recurse -Force -Verbose -ErrorAction SilentlyContinue
 
 # Purpose : Initiate empty string variables to build OneDrive command line
 # Result  : Empty string variables will created
